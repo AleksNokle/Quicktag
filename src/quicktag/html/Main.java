@@ -17,7 +17,8 @@ public class Main implements Controller{
         container.div("mycont1");
         container.close();
 
-        list.li("Banana", "Apple", "Orange");
+
+        table.table(3, "Banana", "Apple", "Orange", "Strawberry", "Pineapple", "Mango");
 
         write.quick();
     }

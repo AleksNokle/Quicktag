@@ -14,4 +14,5 @@ public interface Controller {
     Link link = new Link();
     Container container = new Container();
     List list = new List();
+    Table table = new Table();
 }

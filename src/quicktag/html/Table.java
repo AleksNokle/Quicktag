@@ -1,31 +1,31 @@
 package quicktag.html;
 
-public class Table {
+import quicktag.data.Controller;
+
+public class Table implements Controller {
 
     /**
-     *
-     * @param split
-     * @param args
+     * Creates a HTML5 table element with table rows (tr) and table data (td) inside. The split value determines
+     * how many table data entries to put inside a single row before a new row is made. Ultimately the split value
+     * can then be seen as the amount of columns in your table.
+     * @param split The amount of columns in the table
+     * @param args The data to be inserted into the table
      */
 
     public void table (int split, String ... args){
 
-        int x;
-        String content = "";
-        String row = "";
+        data.setContent("\n<table>\n");
 
         for (int i = 0; i < args.length;){
-            for (x = 0; x < split; x++){
-                content += "<th>" + args[i] + "</th>\n";
+            data.setContent("\n<tr>\n");
+            for (int x = 0; x < split; x++){
+                data.setContent("<td>" + args[i] + "</td>\n");
                 i++;
             }
-            row += "\n<tr>\n" + content + "</tr>\n";
-            x = 0;
-            content = "";
+            data.setContent("</tr>\n");
         }
 
-        String table = "\n<table>" + row + "</table>\n";
-        //storage += table;
+        data.setContent("\n</table>\n");
 
     }
 

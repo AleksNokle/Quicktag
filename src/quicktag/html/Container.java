@@ -2,17 +2,21 @@ package quicktag.html;
 
 import quicktag.data.Controller;
 
+/**
+ * Container has methods to make some of the most common container-type elements.
+ */
+
 public class Container implements Controller {
+
+    //Should containers have automatic ID or not?
 
     /**
      * Initializes a HTML5 div container. Any generic container can then be closed by calling close() afterwards.
      * Elements that you want to put inside this container need to be created after this method is called, but before close() is called (inbetween).
-     * A generic ID will be automatically assigned to this element. See the documentation for further details on how the generic
-     * ID system works.
      */
 
     public void div(){
-        data.setContent("\n<div id=\"" + data.generateId() + "\">\n");
+        data.setContent("\n<div>\n");
         data.setCurrentContainer("<div>");
     }
 
@@ -30,7 +34,8 @@ public class Container implements Controller {
 
 
     /**
-     *
+     * Initializes a HTML5 main container. Any generic container can then be closed by calling close() afterwards.
+     * Elements that you want to put inside this container need to be created after this method is called, but before close() is called (inbetween).
      */
 
     public void main() {
@@ -39,8 +44,10 @@ public class Container implements Controller {
     }
 
     /**
-     *
-     * @param id
+     * Initializes a HTML5 main container. Any generic container can then be closed by calling close() afterwards.
+     * Elements that you want to put inside this container need to be created after this method is called, but before close() is called (inbetween).
+     * You can give the element an ID of your choice.
+     * @param id The id you want for your HTML element
      */
 
     public void main (String id){
@@ -49,7 +56,8 @@ public class Container implements Controller {
     }
 
     /**
-     *
+     * Initializes a HTML5 section container. Any generic container can then be closed by calling close() afterwards.
+     * Elements that you want to put inside this container need to be created after this method is called, but before close() is called (inbetween).
      */
 
     public void section(){
@@ -58,8 +66,10 @@ public class Container implements Controller {
     }
 
     /**
-     *
-     * @param id
+     * Initializes a HTML5 section container. Any generic container can then be closed by calling close() afterwards.
+     * Elements that you want to put inside this container need to be created after this method is called, but before close() is called (inbetween).
+     * You can give the element an ID of your choice.
+     * @param id The id you want for your HTML element
      */
 
     public void section (String id){
@@ -68,7 +78,8 @@ public class Container implements Controller {
     }
 
     /**
-     *
+     * Initializes a HTML5 article container. Any generic container can then be closed by calling close() afterwards.
+     * Elements that you want to put inside this container need to be created after this method is called, but before close() is called (inbetween).
      */
 
     public void article(){
@@ -77,8 +88,10 @@ public class Container implements Controller {
     }
 
     /**
-     *
-     * @param id
+     * Initializes a HTML5 article container. Any generic container can then be closed by calling close() afterwards.
+     * Elements that you want to put inside this container need to be created after this method is called, but before close() is called (inbetween).
+     * You can give the element an ID of your choice.
+     * @param id The id you want for your HTML element
      */
 
     public void article(String id){
@@ -88,7 +101,8 @@ public class Container implements Controller {
     }
 
     /**
-     *
+     * Initializes a HTML5 header container. Any generic container can then be closed by calling close() afterwards.
+     * Elements that you want to put inside this container need to be created after this method is called, but before close() is called (inbetween).
      */
 
     public void header (){
@@ -97,8 +111,10 @@ public class Container implements Controller {
     }
 
     /**
-     *
-     * @param id
+     * Initializes a HTML5 header container. Any generic container can then be closed by calling close() afterwards.
+     * Elements that you want to put inside this container need to be created after this method is called, but before close() is called (inbetween).
+     * You can give the element an ID of your choice.
+     * @param id The id you want for your HTML element
      */
 
     public void header (String id){

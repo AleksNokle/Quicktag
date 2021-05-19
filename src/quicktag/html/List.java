@@ -2,6 +2,10 @@ package quicktag.html;
 
 import quicktag.data.Controller;
 
+/**
+ * List contains methods that allow you to make a variety of html list elements.
+ */
+
 public class List implements Controller {
 
     /**
@@ -77,7 +81,7 @@ public class List implements Controller {
     /**
      * Creates a HTML5 list element for every argument given. Regular HTML conventions dictate that you should not
      * make li elements without a wrapper like ol or ul however.
-     * @param args
+     * @param args The content of the li elements
      */
 
     public void li (String ... args){

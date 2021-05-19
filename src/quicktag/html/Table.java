@@ -2,6 +2,10 @@ package quicktag.html;
 
 import quicktag.data.Controller;
 
+/**
+ * Table contains a method that allows users to make a basic html table.
+ */
+
 public class Table implements Controller {
 
     /**

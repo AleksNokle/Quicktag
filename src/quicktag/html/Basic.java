@@ -2,6 +2,10 @@ package quicktag.html;
 
 import quicktag.data.Controller;
 
+/**
+ * Basic contains methods to make the most simple and common html elements.
+ */
+
 public class Basic implements Controller {
 
     /**
@@ -55,18 +59,21 @@ public class Basic implements Controller {
     }
 
     /**
-     *
-     * @param text
+     * Creates a HTML5 footer element. The content of the footer will be the text string that is provided.
+     * A generic ID will be automatically assigned to this element. See the documentation for further details on how the generic
+     * ID system works.
+     * @param text The text of your footer
      */
 
     public void footer (String text){
-        data.setContent("\n<footer>" + text + "</footer>\n");
+        data.setContent("\n<footer id=\"" + data.generateId() + "\">" + text + "</footer>\n");
     }
 
     /**
-     *
-     * @param id
-     * @param text
+     * Creates a HTML5 footer element. The content of the footer will be the text string that is provided.
+     * You can give the element an ID of your choice.
+     * @param id The id you want for your HTML element
+     * @param text The text of your footer
      */
 
     public void footer (String id, String text){
@@ -79,6 +86,16 @@ public class Basic implements Controller {
 
     public void br(){
         data.setContent("<br>\n");
+    }
+
+    /**
+     * Sets the current title for your HTML page. This title will be used in the html page made by
+     * any of the Write methods.
+     * @param title The title of your page
+     */
+
+    public void title(String title){
+        data.setHtmlTitle("<title>" + title + "</title>");
     }
 
 }

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Quicktag:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Quicktag_jar</output-path>
+    <root id="archive" name="Quicktag.jar">
+      <element id="module-output" name="Quicktag" />
+    </root>
+  </artifact>
+</component>

@@ -2,6 +2,10 @@ package quicktag.html;
 
 import quicktag.data.Controller;
 
+/**
+ * Link contains a single method that allow you to make a standard html link element.
+ */
+
 public class Link implements Controller {
 
     /**

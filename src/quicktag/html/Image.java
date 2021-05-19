@@ -2,17 +2,19 @@ package quicktag.html;
 
 import quicktag.data.Controller;
 
+/**
+ * Image contains methods that allow you to add images to your html page.
+ */
+
 public class Image implements Controller {
 
     /**
      * Creates a HTML5 img element. Provide a source link or url for the image to add it to your page.
-     * A generic ID will be automatically assigned to this element. See the documentation for further details on how the generic
-     * ID system works.
      * @param source The url/source of your image
      */
 
     public void img (String source){
-        data.setContent("<img id=\"" + data.generateId() + "\" src=\"" + source + "\">\n");
+        data.setContent("<img src=\"" + source + "\">\n");
     }
 
     /**
